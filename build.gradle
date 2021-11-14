@@ -1,0 +1,40 @@
+plugins {
+	id 'fabric-loom' version "${fabricLoomVersion}"
+}
+
+group = project.modGroup
+version = "${project.modVersion}+${project.minecraftVersion}"
+description = project.modDescription
+archivesBaseName = "${project.modId}-fabric"
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraftVersion}"
+	mappings "net.fabricmc:yarn:${project.yarnVersion}"
+	modImplementation "net.fabricmc:fabric-loader:${project.fabricLoaderVersion}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabricApiVersion}"
+}
+
+tasks.named('processResources').configure {
+	filesMatching('fabric.mod.json') {
+		expand(project.properties)
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = 'UTF-8'
+
+	if (JavaVersion.current().isJava9Compatible()) {
+		options.release = project.javaVersion as int
+	} else {
+		sourceCompatibility = project.javaVersion
+		targetCompatibility = project.javaVersion
+	}
+}
+
+tasks.named('jar').configure {
+	from('LICENSE') {
+		rename {
+			"LICENSE-${project.archivesBaseName}"
+		}
+	}
+}

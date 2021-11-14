@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "${modId}",
+	"version": "${modVersion}",
+	"name": "${modName}",
+	"description": "${modDescription}",
+
+	"authors": [
+		"jensbrks"
+	],
+	"contact": {
+		"sources": "https://github.com/jensbrks/${modId}-fabric"
+	},
+	"license": "BSD-3-Clause",
+
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.github.jensbrks.fullbright.FullbrightClientInitializer"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${fabricLoaderVersion}",
+		"fabric": "*",
+		"minecraft": "${minecraftVersion.replaceAll('(\\d+\\.\\d+)\\.\\d+', '$1.x')}",
+		"java": ">=${javaVersion}"
+	}
+}
