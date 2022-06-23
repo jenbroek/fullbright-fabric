@@ -6,9 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-06-23
+### Changed
+- Updated Minecraft-compatible version to 1.19
+
 ## [0.1.0] - 2021-11-14
 ### Added
 - Customizable keybind to toggle fullbright (initial release)
 
-[Unreleased]: https://github.com/jensbrks/fullbright-fabric/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/jensbrks/fullbright-fabric/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/jensbrks/fullbright-fabric/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/jensbrks/fullbright-fabric/releases/tag/v0.1.0

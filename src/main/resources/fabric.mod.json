@@ -14,6 +14,9 @@
 	"license": "BSD-3-Clause",
 
 	"environment": "client",
+	"mixins": [
+		"${modId}.mixins.json"
+	],
 	"entrypoints": {
 		"client": [
 			"com.github.jensbrks.fullbright.FullbrightClientInitializer"
@@ -21,8 +24,8 @@
 	},
 	"depends": {
 		"fabricloader": ">=${fabricLoaderVersion}",
-		"fabric": "*",
-		"minecraft": "${minecraftVersion.replaceAll('(\\d+\\.\\d+)\\.\\d+', '$1.x')}",
+		"fabric": "^${fabricApiVersion}",
+		"minecraft": "~${minecraftVersion}",
 		"java": ">=${javaVersion}"
 	}
 }

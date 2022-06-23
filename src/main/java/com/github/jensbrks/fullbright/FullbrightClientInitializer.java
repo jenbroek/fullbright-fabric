@@ -25,11 +25,12 @@ public class FullbrightClientInitializer implements ClientModInitializer {
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			if (keyBinding.wasPressed()) {
-				if (client.options.gamma == FULLBRIGHT_GAMMA) {
-					client.options.gamma = oldGamma;
+				var gammeValue = client.options.getGamma().getValue();
+				if (gammeValue == FULLBRIGHT_GAMMA) {
+					client.options.getGamma().setValue(oldGamma);
 				} else {
-					oldGamma = client.options.gamma;
-					client.options.gamma = FULLBRIGHT_GAMMA;
+					oldGamma = gammeValue;
+					client.options.getGamma().setValue(FULLBRIGHT_GAMMA);
 				}
 			}
 		});
