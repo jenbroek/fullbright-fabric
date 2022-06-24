@@ -18,10 +18,10 @@ jobs:
           cache: gradle
       - run: ./gradlew build
       - id: read_changelog
-        uses: mindsers/changelog-reader-action@v2
+        uses: ffurrer2/extract-release-notes@v1
       - uses: softprops/action-gh-release@v1
         with:
-          body: ${{ steps.read_changelog.outputs.changes }}
+          body: ${{ steps.read_changelog.outputs.release_notes }}
           files: 'build/libs/*'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
