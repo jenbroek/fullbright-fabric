@@ -11,12 +11,12 @@ jobs:
         with:
           fetch-depth: 0
       - uses: gradle/wrapper-validation-action@v1
-      - uses: actions/setup-java@v2
+      - uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: '17'
           cache: gradle
-      - run: ./gradlew build
+      - run: ./gradlew build --no-daemon
       - id: read_changelog
         uses: ffurrer2/extract-release-notes@v1
       - uses: softprops/action-gh-release@v1
