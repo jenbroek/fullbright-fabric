@@ -9,7 +9,7 @@ import org.lwjgl.glfw.GLFW;
 
 public class FullbrightClientInitializer implements ClientModInitializer {
 
-	private static final double FULLBRIGHT_GAMMA = 1000D;
+	public static final double FULLBRIGHT_GAMMA = 1000D;
 
 	/*
 	 * Assign a sane default value in case `gamma` is
