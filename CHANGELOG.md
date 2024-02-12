@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Customizable keybind to toggle fullbright (initial release)
 
-[Unreleased]: https://github.com/jensbrks/fullbright-fabric/compare/v2.0.0...HEAD
-[2.0.0]: https://github.com/jensbrks/fullbright-fabric/compare/v1.0.0...v2.0.0
-[1.0.0]: https://github.com/jensbrks/fullbright-fabric/compare/v0.1.0...v1.0.0
-[0.1.0]: https://github.com/jensbrks/fullbright-fabric/releases/tag/v0.1.0
+[Unreleased]: https://github.com/jenbroek/fullbright-fabric/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/jenbroek/fullbright-fabric/compare/v1.0.0...v2.0.0
+[1.0.0]: https://github.com/jenbroek/fullbright-fabric/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/jenbroek/fullbright-fabric/releases/tag/v0.1.0

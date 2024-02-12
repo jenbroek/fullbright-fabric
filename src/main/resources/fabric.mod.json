@@ -6,10 +6,10 @@
 	"description": "${modDescription}",
 
 	"authors": [
-		"jensbrks"
+		"jenbroek"
 	],
 	"contact": {
-		"sources": "https://github.com/jensbrks/${modId}-fabric"
+		"sources": "https://github.com/jenbroek/${modId}-fabric"
 	},
 	"license": "BSD-3-Clause",
 
@@ -19,7 +19,7 @@
 	],
 	"entrypoints": {
 		"client": [
-			"com.github.jensbrks.fullbright.FullbrightClientInitializer"
+			"com.github.jenbroek.fullbright.FullbrightClientInitializer"
 		]
 	},
 	"depends": {

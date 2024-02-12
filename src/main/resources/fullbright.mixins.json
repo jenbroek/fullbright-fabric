@@ -1,7 +1,7 @@
 {
 	"required": true,
 	"minVersion": "0.8",
-	"package": "com.github.jensbrks.fullbright.mixin",
+	"package": "com.github.jenbroek.fullbright.mixin",
 	"client": [
 		"DoubleSliderCallbacksMixin"
 	],

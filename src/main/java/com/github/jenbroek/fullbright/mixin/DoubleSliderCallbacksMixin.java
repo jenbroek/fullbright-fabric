@@ -1,6 +1,6 @@
-package com.github.jensbrks.fullbright.mixin;
+package com.github.jenbroek.fullbright.mixin;
 
-import com.github.jensbrks.fullbright.FullbrightClientInitializer;
+import com.github.jenbroek.fullbright.FullbrightClientInitializer;
 import java.util.Optional;
 import net.minecraft.client.option.SimpleOption;
 import org.spongepowered.asm.mixin.Mixin;
